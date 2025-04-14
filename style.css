@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+    box-sizing: border-box;
+   
+}
+*::before, *::after
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: linear-gradient(to right, #ce38908f,#44b3df8f); */
+  /* filter: blur(1rem); */
+}
+html{
+    font-size : 62.5%;
+    font-family: 'Jost', sans-serif;
+}  
+
+.backg_image
+{
+  background-image: url('IMAGES/falak-tak-chal-Sathmere.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  filter: blur(1.5rem);
+}
+.main_cont
+{
+  
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(to right, #ce38908f,#44b3df8f); */
+    /* background-image: url("IMAGES/falak-tak-chal-Sathmere.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
+    display: grid;
+    place-items: center;
+}
+
+.box_cout
+{
+    filter: none;
+    overflow: hidden;
+    height: 50rem;
+    width: 35rem;
+    background: linear-gradient(to right, #22a7db,#ce2588);
+    /* background-color: #8a7f7f; */
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.356);
+    text-align: center;
+    position: absolute;
+}
+ .box_cout #title
+{
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(189, 181, 181);
+    margin-top: 2rem;
+
+   
+} 
+.main_cont #artist
+{
+
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(189, 181, 181);
+    
+}
+#logo
+{
+  text-align: left;
+  color: rgb(189, 181, 181);
+  font-size: 2rem;
+  margin-top: -1rem;
+}
+.image_cont 
+{
+    width: 20rem;
+    height: 20rem;
+    margin:auto;
+}
+.image_cont img
+{    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.controlas
+{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    column-gap: 1rem;
+}
+.controlas button
+{
+  
+   border-radius: 50%;
+   width: 5rem;
+   height: 5rem;
+   cursor: pointer;
+   border: none;
+   background: rgba(245, 245, 245, 0.1);
+}
+.controlas button i
+{
+  font-size: 2rem;
+  text-align: center;
+}
+.controlas button:hover
+{
+  /* background: #d3c758a8; */
+  background: #070707a8;
+
+}
+.controlas button:hover
+{
+  color: #fffef2a8;
+}
+.anime{
+    animation: rotation 5s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+
+
+  
+.music-list
+{  
+  position: absolute;
+  width: 100%;
+  bottom: -55%;
+  opacity: 0;
+  pointer-events: none;
+  left: 0;
+  background:
+  linear-gradient(rgb(185, 236, 155), transparent),
+  linear-gradient(to top left, rgb(187, 19, 19), transparent),
+  linear-gradient(to top right, rgb(0, 110, 255), transparent);
+  background-blend-mode: screen;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0rem -.5rem 1rem rgba(0, 0, 0 , 0.1);
+  z-index: 5;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  
+  
+}
+.music-list.show
+{
+  bottom: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+.music-list ul
+{
+  margin-top: 1rem 0;
+  max-height: 26rem;
+  overflow: auto;
+}
+.music-list ul li{
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+  padding-bottom: 1rem;
+  margin-bottom: .5rem;
+  color: black;
+  border-bottom: .1rem solid #e5e5e5;
+  text-align: left;
+}
+.music-list ul li h4{
+padding: none;
+
+}
+.music-list ul li:last-child
+{
+  border-bottom: 0rem;
+}
+.music-list ul li .row span
+{
+  font-size: 1.1rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+.music-list ul li .row p
+{
+  opacity: 0.6;
+  text-align: left;
+  text-transform: uppercase;
+}
+.music-list ul li .row  img
+{
+  width: 4rem;
+  height: 4rem;
+  margin-left: 25rem;
+  border-radius: 50%;
+  margin-top: -2.45rem;
+  /* opacity: 0.6; */
+}
+ul li .audio-duration
+{
+  font-size: 1.6rem;
+}
+.header .row
+{
+  display: flex;
+  align-items: center;
+  font-size: 1.9rem;
+  color: #515c6f;
+  border-bottom: .7rem solid #e5e5e500;
+}
+.music-list .header , .music-list ul li
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header
+{
+  padding-top: .8rem;
+}
+.header .row i
+{
+  cursor: default;
+}
+.header .row span
+{
+  margin-left: .5rem;
+}
+.header #close
+{
+  font-size: 2.2rem;
+  color: #515c6f;
+}
+
+.music-list ul::-webkit-scrollbar
+{
+  width: 0;
+}
+
+.music-list ul li:hover
+{
+  /* color:#048af8; */
+  color: rgb(185, 77, 5);
+
+}
+ul li.playing
+{
+  pointer-events: none;
+  /* color: #048af8; */
+  color: rgb(185, 77, 5);
+}
+.music-list input
+{
+  width: 100%;
+  /* border: none; */
+  border-radius: .5rem;
+  background: none;
+  border-color:#515c6f;
+  /* height: 2rem; */
+}
+
+
+
+#close
+{
+  cursor: pointer;
+  border-bottom: .7rem solid #e5e5e500;
+
+}
+.progress_div
+{
+    width: 100%;
+    height: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0 , 0.07),0 2px 4px rgba(0, 0, 0 , 0.07),
+    0 4px 8px rgba(0, 0, 0 , 0.07),0 8px 16px rgba(0, 0, 0 , 0.07)
+    ,0 16px 32px rgba(0, 0, 0 , 0.07),0 32px 64px rgba(0, 0, 0 , 0.07);
+
+    border-radius: 4rem;
+    position: relative;
+    margin-top: 0.5rem;
+    transition: width 10s linear;
+    -moz-transition: width 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear;
+    cursor: pointer;
+    appearance: none;
+}
+
+.progress
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(12, 12, 12);
+    border-radius: 4rem;
+    transition: all 0.3s linear;
+     /* -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -webkit-transition: all 1a linear; */
+    cursor: pointer;
+    appearance: none;
+}
+
+.progress_duration_meater
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/* .anime1{
+    animation: rot 0.1s 1 linear;
+  }
+  
+  @keyframes rot {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(60deg);
+    }
+  } */
+
+
+.inedxone
+{
+  height: 50rem;
+  width: 33rem;
+  background: linear-gradient(to right, #df44ca,#45ce38);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0 , 0.2);
+  text-align: center;
+}
+
+
+
+@media (max-width:1100px){
+
+  html{
+      font-size: 60%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+ 
+}
+
+@media (max-width:1000px)
+{
+
+  html
+  {
+      font-size: 60%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+ }
+
+
+}
+@media (max-width:950px){
+
+  html{
+      font-size: 70%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+
+}
+@media (max-width:800px){
+
+  html{
+      font-size: 90%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+ 
+}
+@media (max-width:850px){
+
+  html{
+      font-size: 90%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+ 
+}
+@media (max-width:900px){
+
+  html{
+      font-size: 65%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+  
+}
+
+@media (max-width:650px){
+
+  html{
+      font-size: 55%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+ .box_cout
+ {
+  height:auto;
+ }
+
+
+  
+}
+@media (max-width:600px){
+
+  html{
+      font-size: 65%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+ .box_cout
+ {
+  height:auto;
+ }
+ .backg_image
+ {
+   width: 100%;
+   
+ }
+  
+}
+@media (max-width:550px){
+
+  html{
+      font-size: 58%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+  
+}
+@media (max-width:450px){
+
+  html{
+      font-size: 58%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+  
+}
+@media (max-width:400px){
+
+  html{
+      font-size: 50%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+  
+}
+@media (max-width:300px){
+
+  html{
+      font-size: 35%;
+  }
+
+ .main_cont
+ {
+   height: 100vh;
+   width: 100%;
+
+ }
+  
+}

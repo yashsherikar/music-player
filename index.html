@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel ="stylesheet" href = "style.css">
+   <link rel="icon"  href="music.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <title>MusicPlayer</title>
+</head>
+<body>
+  
+    <div class="main_cont">
+        <div class="backg_image">
+        </div>
+       
+        <div class="box_cout">  
+            <p id="logo"><i class="fa fa-music"></i>Music</p>    
+            <p id="title">falak-tak-chal-Sathmere</p>
+            <p id="artist">Udit Narayan,Sunidhi Chauhan</p>
+            <div class="image_cont">
+                <img src="IMAGES\falak-tak-chal-Sathmere.jpg">
+            </div>
+            
+            <audio src="YASHMUSIC\falak-tak-chal-Sathmere.mp3" ></audio>
+
+<!--  -->
+            <div class="progressbar_container" id="progress_container">
+
+                <div class="progress_duration_meater">
+                    <div id="current_time"> 0:00</div>
+                    <div id="duration_time">0:00</div>
+                </div>
+                <div class="progress_div" id ="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="controlas">
+                <button id="repeate"><i  class="material-icons">repeat</i></button>
+                <button  id="prev"><i class="material-icons">skip_previous</i></button>
+                <button id="play"><i class="material-icons play" >play_arrow</i></button>
+                <button  id="next"><i class="material-icons">skip_next</i></button>
+                <button id="Musiclist"><i class="material-icons">queue_music</i></button>
+            </div>
+            
+            <div class="music-list">
+                <div>
+                    <input class="search-txt" type="text" name placeholder="Search">
+                </div>
+                <div class="header">
+                    <div class="row">
+                        <i class="list material-icons">queue_music</i>
+                        <span>Music List</span>
+                    </div>
+                    <i id="close" class="material-icons">close</i>
+                </div>
+                <ul id="main">
+                    
+                      
+                </ul>
+                 
+            </div>
+        
+
+
+
+
+           
+        </div>
+        
+ 
+    </div>
+    <script src="Music_Cont.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
