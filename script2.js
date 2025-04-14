@@ -1,6 +1,20 @@
 let All_song = [
-   
-  
+
+     {
+      name: "Paaro",
+      title: "Paaro",
+      artist: "Aditya Rikhari",
+    }, 
+   {
+      name: "Maand",
+      title: "Bayaan | Hasan Raheem",
+      artist: "Rovalio - Maand",
+    }, 
+  {
+      name: "Jhol",
+      title: "Jhol | Coke Studio Pakistan",
+      artist: "Maanu x Annural Khalid",
+    }, 
     {
       name: "Peaches x Tu Aake Dekhle Mashup",
       title: "Peaches x Tu Aake Dekhle Mashup",
