@@ -107,7 +107,7 @@ let All_song = [
       name: "Toota Jo Kabhi Taara",
       title: "Toota Jo Kabhi Taara(slowed&reverb)",
       artist: "SACHIN-JIGAR",
-    },
+    }
  
  
    
