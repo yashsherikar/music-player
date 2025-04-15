@@ -1,5 +1,11 @@
 let All_song = [
-{
+         {
+      name: "Finding-Her",
+      title: " Finding-Her",
+      artist: "Kushagra, Bharath",
+    }, 
+     
+      {
       name: "Harleys In Hawaii",
       title: "Harleys In Hawaii",
       artist: "",
